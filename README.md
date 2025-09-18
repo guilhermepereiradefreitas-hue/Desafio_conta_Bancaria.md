@@ -50,3 +50,17 @@ while True:                                                                     
         else:
             print("Operação falhou! O valor informado é inválido.")
 
+    elif opcao == "3":
+
+        print("\n______________EXTRATO_________________")                         #Cabeçalho do extrato
+        print("Não foram realizadas movimentações." if not extrato else extrato)  #Verifica se o extrato está vazio
+        print(f"\nSaldo: R$ {saldo:.2f}")                                         #Saldo formatado com duas casas decimais
+        print("________________________________________")                         #Rodapé do extrato
+
+    elif opcao == "4":
+        break                                                                     #Encerra o loop e sai do programa
+
+    else:
+        print("Operação inválida, por favor selecione novamente a operação desejada.")
+
+
